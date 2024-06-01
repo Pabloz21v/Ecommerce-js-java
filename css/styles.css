@@ -1,0 +1,117 @@
+/* START SLIDE COMPONENT */
+
+@import url(https://db.onlinewebfonts.com/c/03fe5644d1605049951f58ca7961c33f?family=SamsungSharpSans-Bold);
+.containerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.containerTextSlide {
+  position: absolute;
+  max-width: 1440px;
+  top: 6%;
+  margin: 0 30px;
+}
+.containerTextSlide h1 {
+  font-family: "SamsungSharpSans-Bold", arial, sans-serif;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+}
+
+.containerTextSlide p {
+  font-family: "SamsungSharpSans", arial, sans-serif;
+}
+
+.textLink {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.btnContainer {
+  background-color: black;
+  height: 12vw;
+  width: 35vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btnContainer:hover {
+  opacity: 0.8;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+.decorationLink {
+  text-decoration: none;
+}
+
+.decorationLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background-color: currentColor;
+  transform-origin: center;
+  animation-fill-mode: forwards;
+}
+
+.decorationLink:hover::after {
+  animation: myAnim 0.4s ease forwards;
+}
+
+.parrafoSlide {
+  /* margin-top: 24px; */
+  /* font-size: 18px; */
+  line-height: 1.33;
+  word-wrap: break-word;
+}
+/* icon */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 300, "GRAD" 0, "opsz" 20;
+}
+
+/* FINISH SLIDE COMPONENT */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.containerButtons {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 768px) {
+  .containerTextSlide {
+    flex-direction: column;
+    top: 34%;
+    left: 6%;
+    width: 43.05555556vw;
+    margin: 0;
+  }
+  .containerTextSlide h1 {
+    width: 100%;
+    text-align: start;
+  }
+  .containerTextSlide p {
+    width: 100%;
+  }
+  .containerButtons {
+    flex-direction: row;
+  }
+  .btnContainer {
+    width: 8vw;
+    height: 3vw;
+  }
+  .textLink {
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,208 @@
+@import url(https://db.onlinewebfonts.com/c/00487ece712f86b9b503997ceb17daff?family=SamsungOne-700);
+
+
+li{
+    list-style: none;
+}
+h4{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+.titulo{
+    padding-top: 420px;
+    font-size: 40px;
+}
+.titulo2{
+    padding-top: 450px;
+    font-size: 20px;
+}
+#color{
+    color: rgb(0, 0, 0);
+}
+#links a{
+    color: white;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#links li a:focus{
+    text-decoration: underline;
+    border-style: dotted ;
+    border-color: white;
+}
+#links li a:hover{
+    background-color: rgb(8, 8, 8);
+    opacity: 50%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#links2 a{
+    color: black;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#links2 li a:focus{
+    text-decoration: underline;
+    border-style: dotted ;
+    border-color: black;
+}
+#links2 li a:hover{
+    background-color:white;
+    opacity: 50%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+#botones{
+    align-items: center;
+    margin-top: 3px;
+}
+
+.TV{
+    background-image: url(../images/98_PC\(1\).jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+.TV2{
+    background-image: url(../images/NEO-QLED.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+.TV3{
+    background-image: url(../images/the-frame.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+.TV4{
+    background-image: url(../images/neo-qled-gaming3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+.TV5{
+    background-image: url(../images/the-freestyle.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+.btn{
+    background-color: white;
+    color: black;
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.btn-negro{
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+.btn-negro:hover{
+    background-color: grey;
+    text-decoration: none;
+}
+.boton{
+    font-size: 12px;
+}
+.boton:focus{
+    color: white;
+}
+.LH{
+    background-image: url(../images/Bespoke_KV_clean_BANNERS__1440x810\(1\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+#links3 a{
+    color: black;
+    text-decoration: none;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+#links3 li a:focus{
+    border-style: dotted ;
+    border-color: black;
+}
+#links3 li a:hover{
+    background-color: white;
+    opacity: 50%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+/*lavasecarropas*/
+.LSR{
+    background-image: url(../images/lavasecarropas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+/*lavarropas*/
+.LR{
+    background-image: url(../images/lavasecarropas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+/*heladeras*/
+.HEL{
+    background-image: url(../images/heladeras.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    height: 700px;
+    font-family:"Samsung Sharp Sans Bold";
+}
+/*footer*/
+.redes{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+}
+.caja{
+    margin-top: 1%;
+    padding-top: 0.2%;
+    padding-bottom: 0.2%;
+    border-radius: 5px;
+} 
+.tamaño{
+    width: 3%;
+    height: 3%;
+}
+.footer{
+    font-size: 20px;
+    padding-bottom: 1%;
+}
