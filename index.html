@@ -6,114 +6,104 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Landing Page</title>
 	<!-- CSS -->
-	<link rel="stylesheet" href="css/styles.css" />
+	
 	<link rel="stylesheet" href="css/elegidos-del-mes.css">
-	<link rel="stylesheet" href="css/linea-hogar.css">
-	<link rel="stylesheet" href="css/login.css">
+	
 
 	<!-- BOOTSTRAP -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
-	<!-- ICONS -->
-	<link rel="stylesheet"
-		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-
-	<!-- Swiper CSS -->
-	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<!-- Local CSS -->
-	<link rel="stylesheet" href="css/productos-recomendados.css">
-	<!-- Fuente de Samsung -->
-	<link href="https://db.onlinewebfonts.com/c/00487ece712f86b9b503997ceb17daff?family=SamsungOne-700" rel="stylesheet">
-
+	
 </head>
 
 <body>
 
-
+	
 	<!-- MENU  -->
-	<nav class="bg-body-secondary navbar navbar-expand-lg ">
-		<div class="container-fluid">
-			<a class="justify-content-around navbar-brand text-dark-emphasis" href="#">Nosotros</a>
-
-			<!-- Button trigger modal -->
-			<button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-				<span class="material-symbols-outlined">
-					search
-				</span>
-			</button>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<!--links nav-->
-			<div class="d-flex justify-content-around collapse navbar-collapse" id="navbarNavAltMarkup">
-				<div class="navbar-nav gap-2">
-					<a class="nav-link active text-dark-emphasis " aria-current="page" onclick="getGet(this, 'Destacados')" href="#">Destacados</a>
-					<a class="nav-link text-dark-emphasis" onclick="getGet(this, 'Ofertas')"  href="#">Ofertas</a>
-					<li class="nav-item dropdown">
-						<a class="rounded-pill border border-black nav-link dropdown-toggle text-dark-emphasis " href="#"
-							role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Electrodomesticos
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" onclick="getGet(this, 'Heladeras')" href="#">Heladeras</a></li>
-							<li><a class="dropdown-item" onclick="getGet(this, 'Lavarropas')" href="#">Lavarropas</a></li>
-							<li><a class="dropdown-item" onclick="getGet(this, 'Pequeños electrodomescitos')" href="#">Pequeños electrodomescitos</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class=" rounded-pill border border-black text-dark-emphasis nav-link dropdown-toggle" href="#"
-							role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							TV y audio
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" onclick="getGet(this, 'Sony')" href="#">Sony</a></li>
-							<li><a class="dropdown-item" onclick="getGet(this, 'Samsung')" href="#">Samsung</a></li>
-							<li><a class="dropdown-item" onclick="getGet(this, 'Lenovo')" href="#">Lenovo</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown">
-						<a class=" rounded-pill border border-black text-dark-emphasis nav-link dropdown-toggle" href="#"
-							role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							computacion
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Asus')">Asus</a></li>
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Corsair')">Corsair</a></li>
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Intel')">Intel</a></li>
-						</ul>
-					</li>
-					</li>
-					<li class="nav-item dropdown">
-						<a class=" rounded-pill border border-black text-dark-emphasis nav-link dropdown-toggle" href="#"
-							role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							Moviles
-						</a>
-						<ul class="dropdown-menu">
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Samsung')">Samsung</a></li>
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Iphone')">Iphone</a></li>
-							<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Nokia')">Nokia</a></li>
-						</ul>
-					</li>
-
-				</div>
-				<!-- login y carrito-->
-
-				<div>
-					<button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#loginModal">
-						<span class="material-symbols-outlined">
-							person
-						</span>
-					</button>
-
-					<button type="button" class="btn bs-border-color" data-bs-toggle="modal" data-bs-target="#shoppingModal">
-						<span class="material-symbols-outlined">
-							shopping_cart
-						</span>
-					</button>
-					
-				</div>
+	<nav class="navbar navbar-expand-lg bg-body-tertiary ">
+		<div class="container-fluid  mx-4">
+			<div>
+				<a class="navbar-brand" href="#">API-ML</a>
 			</div>
+			
+			<div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item">
+						<a class="nav-link " onclick="getGet(this, 'Ofertas de electrodomesticos')"  href="#">Ofertas</a>
+					</li>
+						<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Electrodomesticos
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" onclick="getGet(this, 'Heladeras')" href="#">Heladeras</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" onclick="getGet(this, 'Lavarropas')" href="#">Lavarropas</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" onclick="getGet(this, 'Pequeños electrodomescitos')" href="#">Pequeños electrodomescitos</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								TV y audio
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" onclick="getGet(this, 'Sony')" href="#">Sony</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" onclick="getGet(this, 'Samsung')" href="#">Samsung</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" onclick="getGet(this, 'Lenovo')" href="#">Lenovo</a></li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Computacion
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Asus')">Asus</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Corsair')">Corsair</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Intel')">Intel</a></li>
+							</ul>
+						</li>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle" href="#"
+								role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								Moviles
+							</a>
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Samsung')">Samsung</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Iphone')">Iphone</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li><a class="dropdown-item" href="#" onclick="getGet(this, 'Nokia')">Nokia</a></li>
+							</ul>
+						</li>
+						
+					
+				</ul>
+				<!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"> -->
+					
+			</div>
+			<div>
+				<!-- Button modal Search-->
+				<button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+					Search
+				</button>
+			</div>
+		</div>
+	</nav>
+
 		</div>
 	</nav>
 	<!-- Modal search -->
@@ -128,7 +118,7 @@
 				<div class="modal-body">
 					<div class="input-group flex-nowrap">
 						<span class="input-group-text" id="addon-wrapping"><span class="material-symbols-outlined">
-								search
+								Buscar
 							</span></span>
 						<input type="text" id="buscadorML" value="" class="form-control" placeholder="..." aria-label="Username"
 							aria-describedby="addon-wrapping">
@@ -141,91 +131,17 @@
 			</div>
 		</div>
 	</div>
-	<!-- Modal Login -->
-	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="loginModalLabel">
-						<div class="one-header">
-							<div class="logo">
-								<h1 class="bg-black"><img src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg"
-										alt="Samsung account"></h1>
-							</div>
-						</div>
-					</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<div class="content ">
-						<div class="forms-login">
-							<!-- Modal login FORMULARIO -->
-							<form id="registerForm">
-								<div class="mb-3">
-									<label for="name" class="form-label">Nombre</label>
-									<input type="text" class="form-control" id="name">
-									<div class="invalid-feedback"></div>
-								</div>
-								<div class="mb-3">
-									<label for="email" class="form-label">Email address</label>
-									<input type="email" class="form-control" id="email" aria-describedby="emailHelp">
-									<div class="invalid-feedback">.</div>
-								</div>
-								<div class="mb-3">
-									<label for="password" class="form-label">Password</label>
-									<input type="password" class="form-control" id="password">
-									<div class="invalid-feedback"></div>
-								</div>
-								<div class="mb-3 form-check">
-								</div>
-								<button type="submit" onclick="close()" class="btn btn-primary">Submit</button>
-							</form>
-						</div>
-				</div>
-		
-		
-				</div>
-		
-				<footer class="one-footer" role="contentinfo">
-					<div class="footer-inner">
-							<div class="footer-logo"><img
-											src="https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg"
-											onerror="this.src='https://account.samsung.com/accounts/v1/resources/one-ui/images/svg/txt_logo.svg';"
-											alt="Samsung account"></div>
-							<address class="footer-address ">Copyright © 1995-2024 Samsung. All Rights Reserved.</address>
-							<div class="footer-links" role="link">
-									<a href="https://account.samsung.com/membership/terms/termscontents?paramLocale=es_AR">
-											Términos y condiciones
-									</a>
-									<a href="https://account.samsung.com/membership/terms/privacypolicy?paramLocale=es_AR" class="active">
-											Aviso de privacidad de Samsung account
-									</a>
-									<a href="https://account.samsung.com/membership/notice/notice-list?paramLocale=es_AR">
-											Aviso
-									</a>
 	
-	
-									<a href="https://help.content.samsung.com/csweb/faq/searchFaq.do">
-											Servicio de atención al cliente
-									</a>
-	
-							</div>
-					</div>
-			</footer>
-			</div>
-		</div>
-	</div>
 
 	<!-- RESULTADOS BUSQUEDA -->
 	<div>
-		<h1 class="text-center p-2 bg-info fs-3 mb-3">Lista de resultados</h1>
+		<h1 class="text-center p-2 bg-info fs-3 mb-3" id="busqueda">Lista de resultados</h1>
 		<div class="container">
 						<table class="table">
 						<thead>
 								<tr>
 										<th scope="col">Título</th>
 										<th scope="col">Imágen</th>
-										<th scope="col">More</th>
 								</tr>
 						</thead>
 						<tbody id="products">
@@ -237,328 +153,107 @@
 	</div>
 	
 
-<!-- MODAL PRODUCTO ELEGIDO -->
-	<div class="modal" tabindex="-1" id="modalResultadoBusqueda">
-		<div class="modal-dialog"  id="datosResultadoBusqueda" >
-			
-    </div>
-  </div>
-</div>
 
-	<!-- SLIDE -->
+	<!-- PRODUCTOS DEL MES -->
 	<section>
-		<!-- Slide Bootstrap -->
-		<div id="carouselExampleIndicators" class="carousel slide carousel-fade" >
-			<!-- data-bs-ride="carousel"  -->
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-					aria-label="Slide 3"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-					aria-label="Slide 4"></button>
-			</div>
-
-			<div class="carousel-inner">
-				<!-- Slide 1 -->
-				<div class="carousel-item active position-relative">
-					<!-- Imagen para pantallas móviles -->
-					<img src="public/images/slide/slide-1-mobile.webp" class="d-block d-md-none w-100"
-						alt="First slide Mobile" />
-
-					<!-- Imagen para pantallas de escritorio -->
-					<img src="public/images/slide/slide-1.webp" class="d-none d-md-block w-100"
-						alt="First slide Desktop" />
-
-				<div class="containerContainer">
-					<div class="position-absolute containerTextSlide">
-						<h1 class="text-black">Galaxy S24 Series</h1>
-						<p class="fw-light parrafoSlide">
-							Próximamente en Argentina | Registrate y obtenelos <br />
-							con beneficios exclusivos
-						</p>
-						<div class="gap-4 d-flex align-items-center mt-4 containerButtons">
-							<a href="#" class="text-dark textLink position-relative decorationLink">Más información</a>
-							<div class="p-2 px-4 rounded-pill btnContainer">
-								<a href="#" class="text-light text-decoration-none textLink">Registrate</a>
-							</div>
-						</div>
-					</div> 
-				</div>
-				</div>
-				<!-- Slide 2 -->
-				<div class="carousel-item">
-					<!-- Imagen para pantallas móviles -->
-					<img src="public/images/slide/slide-2-mobile.webp" class="d-block d-md-none w-100"
-						alt="Second slide Mobile" />
-
-					<!-- Imagen para pantallas de escritorio -->
-					<img src="public/images/slide/slide-2.jpeg" class="d-none d-md-block w-100" alt="Second slide" />
-					<div class="containerContainer">
-					<div class="position-absolute containerTextSlide text-light">
-						<h1>Nuevo TV 98" <br />la experiencia del cine en tu casa</h1>
-						<p class="fw-light parrafoSlide">
-							Cuotas sin interés | Plan canje hasta 54% de ahorro.
-						</p>
-						<div class="gap-4 d-flex align-items-center mt-4 containerButtons">
-							<a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
-
-							<div class="d-flex p-2 px-4 bg-white rounded-pill">
-								<a href="#" class="text-decoration-none textLink text-dark">
-									Comprar
-								</a>
-								<span class="material-symbols-outlined text-dark">
-									north_east
-								</span>
-							</div>
-						</div>
-					</div>
-</div>
-
-				</div>
-				<!-- Slide 3 -->
-				<div class="carousel-item">
-					<!-- Imagen para pantallas móviles -->
-					<img src="public/images/slide/slide-3-mobile.webp" class="d-block d-md-none w-100"
-						alt="Third slide Mobile" />
-
-					<!-- Imagen para pantallas de escritorio -->
-					<img src="public/images/slide/slide-3.webp" class="d-none d-md-block w-100" alt="Third slide" />
-
-					<div class="containerContainer">
-						<div class="position-absolute containerTextSlide text-light">
-							<h1>Nuevos Lavarropas <br />Carga Superior Digital Inverter</h1>
-	
-							<div class="gap-4 d-flex align-items-center mt-4 containerButtons">
-								<a href="#" class="text-light textLink decorationLink position-relative">Más información</a>
-								<div class="d-flex p-2 px-4 bg-white rounded-pill">
-									<a href="#" class="text-decoration-none textLink text-dark">
-										Comprar
-									</a>
-									<span class="material-symbols-outlined text-dark">
-										north_east
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-					
-			
-				</div>
-				<!-- Slide 4 -->
-				<div class="carousel-item">
-					<!-- Imagen para pantallas móviles -->
-					<img src="public/images/slide/slide-4-mobile.webp" class="d-block d-md-none w-100"
-						alt="Fourth slide Mobile" />
-
-					<!-- Imagen para pantallas de escritorio -->
-					<img src="public/images/slide/slide-4.webp" class="d-none d-md-block w-100" alt="Fourth slide" />
-
-					<div class="containerContainer">
-						<div class="position-absolute containerTextSlide">
-							<h1 class="text-black">
-								El próximo gran <br />
-								avance está aquí
-							</h1>
-							<p class="fw-light parrafoSlide">
-								Ahora tambien disponible en Galaxy S23 Series, Z Flip5 | ZFold5,
-								Tab S9 | S9+ | S9 Ultra
-							</p>
-							<div class="gap-4 d-flex align-items-center mt-4 containerButtons">
-								<a href="#" class="text-dark position-relative decorationLink textLink">Más información</a>
-								<div class="d-flex p-2 px-4 bg-black rounded-pill btnContainer">
-									<a href="#" class="text-light text-decoration-none textLink">
-										Comprar
-									</a>
-									<span class="material-symbols-outlined text-light">
-										north_east
-									</span>
-								</div>
-							</div>
-						</div>
-					</div>
-			
-				</div>
-			</div>
-			<button class="carousel-control-prev justify-content-start" type="button"
-				data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" style="width: 5vw;">
-				<div
-					class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light">
-					<span class="carousel-control-prev-icon" aria-hidden="true" style="width: 22px; height: 22px"></span>
-					<span class="visually-hidden">Previous</span>
-				</div>
-			</button>
-			<button class="carousel-control-next justify-content-end" type="button"
-				data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="width: 5vw;">
-				<div
-					class="justify-content-center align-items-center d-flex m-2 p-2 rounded-circle bg-black border border-1 border-light">
-					<span class="carousel-control-next-icon" aria-hidden="true" style="width: 22px; height: 22px"></span>
-					<span class="visually-hidden">Next</span>
-				</div>
-			</button>
+		<div>
+			<ul class="nav justify-content-center bg-body-secondary py-2 ">
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold "
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="0" class="active" aria-current="true"
+						aria-label="Slide 1">Destacados</button>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="3"
+						aria-label="Slide 4">Electrodomésticos</button>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
+				</li>
+				<li class="nav-item">
+					<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
+						data-bs-target="#elegidosDelMes" data-bs-slide-to="5" aria-label="Slide 6">App Samsung
+						Shop</button>
+				</li>
+			</ul>
 		</div>
-	</section>
-
-	
-	<!-- PRODUCTOS RECOMENDADOS -->
-	<section>
-	<div class="container">
-		<section id="fernanda">
-			<h1>Productos Recomendados</h1>
-			<div class="carousel-container">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/1celu.webp" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Galaxy Z Flip 4</h5>
-									<div class="color">Color : <span class="color-name-text">Graphite</span></div>
-									<div class="price">$729.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white mt-auto original-size">COMPRAR
-										AHORA</button>
-
+		
+		<div id="elegidosDelMes" class="carousel slide bg-body-secondary">
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div class="container text-center">
+						<div class="row flex-column flex-sm-row">
+							<div class="col-12 col-sm-3">
+								<div class="zoom-img-p rounded-5 position-relative">
+									<img src="public/images/elegidos-del-mes/destacados 2.avif"
+										class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+										S21 FE 128GB</span>
+								</div>
+								<div class="zoom-img-p rounded-5 position-relative">
+									<img src="public/images/elegidos-del-mes/destacados 3.avif"
+										class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+										S21 FE 128GB</span>
 								</div>
 							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/2notebook.webp" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Galaxy Book 3 (15.6", I7, 16GB)</h5>
-									<div class="color">Color : <span class="color-name-text">Graphite</span></div>
-									<div class="price">$1.729.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white mt-auto">COMPRAR AHORA</button>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/3tv.avif" alt="Card image cap">
-								<div class="card-body">
-									<h5 id="tv-title" class="tv-title">43" UHD 4K Smart TV AU7000</h5>
-									<div class="botones-container">
-										<button id="btn-43" type="button" class="btn btn btn-rounded text-black pulgadas">43"</button>
-										<button id="btn-55" type="button" class="btn btn btn-rounded text-black pulgadas">55"</button>
-										<button id="btn-70" type="button" class="btn btn btn-rounded text-black pulgadas">70"</button>
+							<div class="col-12 col-sm-6 ">
+								<div class="zoom-img-p rounded-5 position-relative">
+									<img src="public/images/elegidos-del-mes/destacado 1.webp"
+										class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+									<div class="position-absolute top-50 start-50 translate-middle mt-5">
+										<span
+											class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+											Samsung Shop!</span>
 									</div>
-									<div id="tv-price" class="price">$549.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
+								</div>
+							</div>
+							<div class="col-12 col-sm-3">
+								<div class="zoom-img-p rounded-5 position-relative">
+									<img src="public/images/elegidos-del-mes/destacados 4.avif"
+										class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
+										TV 98"</span>
+								</div>
+								<div class="zoom-img-p rounded-5 position-relative">
+									<img src="public/images/elegidos-del-mes/destacados 5.avif"
+										class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa
+										Carga Superior</span>
 								</div>
 							</div>
 						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/4.lavasecarropa.avif" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Lavasecarropas 9,5kg con <br> Ecobubble WD4000T</h5>
-									<div class="price">$1.102.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/5.monitor.avif" alt="Card image cap">
-								<div class="card-body">
-									<h5 id="monitor-title" class="card-title">Monitor 27" FHD con panel IPS 75Hz y bordes Ultradelgados
-									</h5>
-									<div class="botones-container">
-										<button id="btn-22" type="button" class="btn btn btn-rounded text-black pulgadas">22"</button>
-										<button id="btn-27" type="button" class="btn btn btn-rounded text-black pulgadas">27"</button>
-									</div>
-									<div id="monitor-price" class="price">$249.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/6.heladera.avif" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Heladera Freezer Inferior No Frost con Digital Inverter, 328L</h5>
-									<div class="price">$1.432.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-								</div>
-							</div>
-						</div>
-						<div class="swiper-slide">
-							<div class="card">
-								<img class="card-img-top" src="public/images/prodrec/7.galaxybud.webp" alt="Card image cap">
-								<div class="card-body">
-									<h5 class="card-title">Galaxy Buds2</h5>
-									<div class="price">$167.999</div>
-									<button type="button" class="btn btn-dark btn-rounded text-white">COMPRAR AHORA</button>
-								</div>
-							</div>
-						</div>
-						<!-- agregar tarjetas -->
 					</div>
-					<!--botones de navegacion -->
-
-				</div><!--de carousel container-->
+				</div>
 			</div>
-		</section>
 
-	</div>
-	<div class="botoncitos">
-		<div class="swiper-button-next"></div>
-		<div class="swiper-button-prev"></div>
-	</div>
-</section>
-
-<!-- PRODUCTOS DEL MES -->
-<section>
-	<h1 class="nav justify-content-center fs-1 fw-bold py-3">Elegidos del mes</h1>
-	<div>
-		<ul class="nav justify-content-center bg-body-secondary py-2 ">
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold "
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="0" class="active" aria-current="true"
-					aria-label="Slide 1">Destacados</button>
-			</li>
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="1" aria-label="Slide 2">Móviles</button>
-			</li>
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="2" aria-label="Slide 3">TV & Audio</button>
-			</li>
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="3"
-					aria-label="Slide 4">Electrodomésticos</button>
-			</li>
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="4" aria-label="Slide 5">Computación</button>
-			</li>
-			<li class="nav-item">
-				<button type="button" class="btn btn-white text-black fs-4 fw-semibold"
-					data-bs-target="#elegidosDelMes" data-bs-slide-to="5" aria-label="Slide 6">App Samsung
-					Shop</button>
-			</li>
-		</ul>
-	</div>
-	
-	<div id="elegidosDelMes" class="carousel slide bg-body-secondary">
-		<div class="carousel-inner">
-			<div class="carousel-item active">
+			<div class="carousel-item">
 				<div class="container text-center">
 					<div class="row flex-column flex-sm-row">
 						<div class="col-12 col-sm-3">
 							<div class="zoom-img-p rounded-5 position-relative">
-								<img src="public/images/elegidos-del-mes/destacados 2.avif"
+								<img src="public/images/elegidos-del-mes/moviles 2.avif"
 									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
 								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-									S21 FE 128GB</span>
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Z
+									Flip5</span>
 							</div>
 							<div class="zoom-img-p rounded-5 position-relative">
-								<img src="public/images/elegidos-del-mes/destacados 3.avif"
+								<img src="public/images/elegidos-del-mes/moviles 3.avif"
 									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
 								<span
 									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
@@ -567,7 +262,7 @@
 						</div>
 						<div class="col-12 col-sm-6 ">
 							<div class="zoom-img-p rounded-5 position-relative">
-								<img src="public/images/elegidos-del-mes/destacado 1.webp"
+								<img src="public/images/elegidos-del-mes/moviles 1.webp"
 									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
 								<div class="position-absolute top-50 start-50 translate-middle mt-5">
 									<span
@@ -578,324 +273,236 @@
 						</div>
 						<div class="col-12 col-sm-3">
 							<div class="zoom-img-p rounded-5 position-relative">
-								<img src="public/images/elegidos-del-mes/destacados 4.avif"
+								<img src="public/images/elegidos-del-mes/moviles 4.avif"
 									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
 								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
-									TV 98"</span>
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									S23 Ultra 256GB</span>
 							</div>
 							<div class="zoom-img-p rounded-5 position-relative">
-								<img src="public/images/elegidos-del-mes/destacados 5.avif"
+								<img src="public/images/elegidos-del-mes/moviles 5.avif"
 									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
 								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									A54 128GB</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<div class="container text-center">
+					<div class="row flex-column flex-sm-row">
+						<div class="col-12 col-sm-6 ">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/tv y audio 1.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<div class="position-absolute top-50 start-50 translate-middle mt-5">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+										Samsung Shop!</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/tv y audio 2.avif"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
+									55" Neo QLED 4K</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/tv y audio 3.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">SMART
+									TV Samsung OLED 65"</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/tv y audio 4.webp"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
+									The Frame Art Mode 4K Smart TV</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/tv y audio 5.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
+									TV 98"</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<div class="container text-center">
+					<div class="row flex-column flex-sm-row">
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/electrodomesticos 2.webp"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavasecarropas
+									9,5kg con Ecobubble</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/electrodomesticos 3.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
+									freezer Twin Cooling 320 litros</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 ">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/electrodomesticos 1.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<div class="position-absolute top-50 start-50 translate-middle mt-5">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Lavarropa
+										9.5Kg Inverter con Ecobubble</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/electrodomesticos 4.webp"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
+									BESPOKE 328LTS Satin Gray</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/electrodomesticos 5.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
+									Lavarropas Carga Superior</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<div class="container text-center">
+					<div class="row flex-column flex-sm-row">
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/computacion 2.jpg"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
+									LED 27" con Panel IPS</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/computacion 3.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
+									Gaming 25"</span>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 ">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/computacion 1.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<div class="position-absolute top-50 start-50 translate-middle mt-5">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
+										Samsung Shop!</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/computacion 4.webp"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									Book3 (15.6",i7,16GB) </span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/computacion 5.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									Book3 (15.6",i3,8GB) </span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="carousel-item">
+				<div class="container text-center">
+					<div class="row flex-column flex-sm-row">
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/app samsung shop 2.webp"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
+								<span
 									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa
-									Carga Superior</span>
+									9.5Kg Eficiencia energetica A+++</span>
+							</div>
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/app samsung shop 3.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
+									The Frame Art Mode 4K Smart TV Serie B </span>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-item">
-			<div class="container text-center">
-				<div class="row flex-column flex-sm-row">
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/moviles 2.avif"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy Z
-								Flip5</span>
+						<div class="col-12 col-sm-6 ">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/app samsung shop 1.webp"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
+								<div class="position-absolute top-50 start-50 translate-middle mt-5">
+									<span
+										class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Heladera
+										Freezer Inferior 328L</span>
+								</div>
+							</div>
 						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/moviles 3.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								S21 FE 128GB</span>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 ">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/moviles 1.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<div class="position-absolute top-50 start-50 translate-middle mt-5">
+						<div class="col-12 col-sm-3">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/app samsung shop 4.avif"
+									class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
 								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
-									Samsung Shop!</span>
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									S23 Ultra 256GB</span>
 							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/moviles 4.avif"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								S23 Ultra 256GB</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/moviles 5.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								A54 128GB</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-item">
-			<div class="container text-center">
-				<div class="row flex-column flex-sm-row">
-					<div class="col-12 col-sm-6 ">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/tv y audio 1.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<div class="position-absolute top-50 start-50 translate-middle mt-5">
+							<div class="zoom-img-p rounded-5 position-relative">
+								<img src="public/images/elegidos-del-mes/app samsung shop 5.avif"
+									class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
 								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
-									Samsung Shop!</span>
+									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
+									S21 FE 128GB</span>
 							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/tv y audio 2.avif"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
-								55" Neo QLED 4K</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/tv y audio 3.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">SMART
-								TV Samsung OLED 65"</span>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/tv y audio 4.webp"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
-								The Frame Art Mode 4K Smart TV</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/tv y audio 5.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Nuevo
-								TV 98"</span>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="carousel-item">
-			<div class="container text-center">
-				<div class="row flex-column flex-sm-row">
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/electrodomesticos 2.webp"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavasecarropas
-								9,5kg con Ecobubble</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/electrodomesticos 3.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
-								freezer Twin Cooling 320 litros</span>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 ">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/electrodomesticos 1.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<div class="position-absolute top-50 start-50 translate-middle mt-5">
-								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Lavarropa
-									9.5Kg Inverter con Ecobubble</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/electrodomesticos 4.webp"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Heladera
-								BESPOKE 328LTS Satin Gray</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/electrodomesticos 5.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">
-								Lavarropas Carga Superior</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-item">
-			<div class="container text-center">
-				<div class="row flex-column flex-sm-row">
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/computacion 2.jpg"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
-								LED 27" con Panel IPS</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/computacion 3.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Monitor
-								Gaming 25"</span>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 ">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/computacion 1.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<div class="position-absolute top-50 start-50 translate-middle mt-5">
-								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">¡App
-									Samsung Shop!</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/computacion 4.webp"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								Book3 (15.6",i7,16GB) </span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/computacion 5.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								Book3 (15.6",i3,8GB) </span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<div class="carousel-item">
-			<div class="container text-center">
-				<div class="row flex-column flex-sm-row">
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/app samsung shop 2.webp"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Lavarropa
-								9.5Kg Eficiencia energetica A+++</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/app samsung shop 3.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">75"
-								The Frame Art Mode 4K Smart TV Serie B </span>
-						</div>
-					</div>
-					<div class="col-12 col-sm-6 ">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/app samsung shop 1.webp"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<div class="position-absolute top-50 start-50 translate-middle mt-5">
-								<span
-									class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-2">Heladera
-									Freezer Inferior 328L</span>
-							</div>
-						</div>
-					</div>
-					<div class="col-12 col-sm-3">
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/app samsung shop 4.avif"
-								class="d-block w-100 mb-4 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								S23 Ultra 256GB</span>
-						</div>
-						<div class="zoom-img-p rounded-5 position-relative">
-							<img src="public/images/elegidos-del-mes/app samsung shop 5.avif"
-								class="d-block w-100 rounded-5 figure-img img-fluid" alt="...">
-							<span
-								class="ajuste-absolute-p position-absolute top-50 start-50 translate-middle mt-5 fw-bold fs-6">Galaxy
-								S21 FE 128GB</span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#elegidosDelMes"
-		data-bs-slide="prev">
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Previous</span>
-	</button>
-	<button class="visually-hidden carousel-control-next" type="button" data-bs-target="#elegidosDelMes"
-		data-bs-slide="next">
-		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Next</span>
-	</button>
+		<button class="visually-hidden carousel-control-prev" type="button" data-bs-target="#elegidosDelMes"
+			data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+		<button class="visually-hidden carousel-control-next" type="button" data-bs-target="#elegidosDelMes"
+			data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
 
 
-</section>
-
-	<!-- FOOTER -->
-
-	<footer class="caja">
-		<div>
-			<p class="d-flex justify-content-center">Copyright© 1995-2024 Samsung. Todos los derechos reservados.</p>
-		</div>
-		<div class="redes">
-			<h1 class="footer">Mantenete Informado!</h1>
-			<a href="https://www.facebook.com/SamsungArgentina/?locale=es_LA" target="_blank"><img class="tamaño"
-					src="public/images/linea-hogar/facebook.svg" alt="FACEBOOK"></a>
-			<a href="https://www.instagram.com/samsungargentina/?hl=es" target="_blank"><img class="tamaño"
-					src="public/images/linea-hogar/instagram.svg" alt="INSTAGRAM"></a>
-			<a href="https://twitter.com/SamsungArg?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-				target="_blank"><img class="tamaño" src="public/images/linea-hogar/twitter.svg" alt="TWITTER"></a>
-			<a href="https://www.youtube.com/channel/UCVxotPxp9JUc4wBWmdyXhYQ" target="_blank"><img class="tamaño"
-					src="public/images/linea-hogar/youtube.svg" alt="YOU-TUBE"></a>
-		</div>
-	</footer>
-
+	</section>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
-
-	<!-- jQuery y Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
-		integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-		crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
-		integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-		crossorigin="anonymous"></script>
-	<!-- Swiper JS -->
-	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
-	<!--mi js-->
-	<script src="js/javascript.js"></script>
 	<script src="js/fetch.js"></script>
-	<script src="js/login.js"></script>
 </body>
 
 </html>
